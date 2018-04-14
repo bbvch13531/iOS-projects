@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+use_frameworks!
+target 'swmaestro' do
+	pod 'AFNetworking', '~> 3.1'
+	pod 'ORStackView', '~> 3.0'
+	pod 'SwiftyJSON', '~> 3.0'
+end
