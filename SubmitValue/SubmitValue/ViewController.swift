@@ -30,6 +30,13 @@ class ViewController: UIViewController {
         self.intervalText.text = "\(value)분 마다"
     }
     
+    @IBAction func onSubmit(_ sender: Any){
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "RVC") as? ResultViewController
+            else {
+                return
+        }
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

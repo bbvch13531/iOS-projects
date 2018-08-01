@@ -13,6 +13,7 @@
 		9F8BA378211161C200AA47CE /* SubmitValue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BA376211161C200AA47CE /* SubmitValue.xcdatamodeld */; };
 		9F8BA37A211161C300AA47CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BA379211161C300AA47CE /* Assets.xcassets */; };
 		9F8BA37D211161C400AA47CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BA37B211161C400AA47CE /* LaunchScreen.storyboard */; };
+		9F8BA3852111782E00AA47CE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BA3842111782E00AA47CE /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9F8BA379211161C300AA47CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8BA37C211161C400AA47CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8BA37E211161C400AA47CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8BA3842111782E00AA47CE /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9F8BA36F211161C200AA47CE /* AppDelegate.swift */,
 				9F8BA371211161C200AA47CE /* ViewController.swift */,
 				9F8BA373211161C200AA47CE /* Main.storyboard */,
+				9F8BA3842111782E00AA47CE /* ResultViewController.swift */,
 				9F8BA379211161C300AA47CE /* Assets.xcassets */,
 				9F8BA37B211161C400AA47CE /* LaunchScreen.storyboard */,
 				9F8BA37E211161C400AA47CE /* Info.plist */,
@@ -141,6 +144,7 @@
 				9F8BA372211161C200AA47CE /* ViewController.swift in Sources */,
 				9F8BA378211161C200AA47CE /* SubmitValue.xcdatamodeld in Sources */,
 				9F8BA370211161C200AA47CE /* AppDelegate.swift in Sources */,
+				9F8BA3852111782E00AA47CE /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
