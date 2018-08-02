@@ -31,10 +31,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onSubmit(_ sender: Any){
+        // VC2의 인스턴스 생성 후 옵셔널 캐스팅
         guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "RVC") as? ResultViewController
             else {
                 return
         }
+        
+        // 값 전달
+        rvc.paramEmail = self.email.text!
+        rvc.paramUpdate = self.isUpdate.isOn
+        rvc.paramInterval = self.interval.value
+        
+        // 화면 이동
+        self.present(rvc, animated: true)
     }
         
     override func viewDidLoad() {
