@@ -45,6 +45,20 @@ class ViewController: UIViewController {
         // 화면 이동
         self.present(rvc, animated: true)
     }
+    @IBAction func onAction(_ sender: Any){
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "RVC") as? ResultViewController
+            else {
+                return
+        }
+        
+        // 값 전달
+        rvc.paramEmail = self.email.text!
+        rvc.paramUpdate = self.isUpdate.isOn
+        rvc.paramInterval = self.interval.value
+        
+        // 네이게이션을 통한 화면 이동
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
