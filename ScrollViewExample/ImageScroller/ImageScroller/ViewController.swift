@@ -27,10 +27,22 @@ class ViewController: UIViewController {
 		imageView.frame.size = (imageView.image?.size)!
 		scrollView.delegate = self
 		setZoomParametersForSize(scrollView.bounds.size)
+		recenterImage()
+	}
+	func recenterImage(){
+		let scrollViewSize = scrollView.bounds.size
+		let imageSize = imageView.frame.size
 		
+		let horizontalSpace = imageSize.width < scrollViewSize.width ? (scrollViewSize.width - imageSize.width) / 2 : 0
+		let verticalSpace = imageSize.height < scrollViewSize.height ? (scrollViewSize.height - imageSize.height) / 2 : 0
+		
+		// Create inset	
+		
+		scrollView.contentInset = UIEdgeInsetsMake(verticalSpace, horizontalSpace, verticalSpace, horizontalSpace)
 	}
 	override func viewWillLayoutSubviews() {
 		setZoomParametersForSize(scrollView.bounds.size)
+		recenterImage()
 	}
 	
 	override func didReceiveMemoryWarning() {
