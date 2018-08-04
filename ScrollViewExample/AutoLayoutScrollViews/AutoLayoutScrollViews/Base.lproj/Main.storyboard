@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutScrollViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0l-Ss-M5p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="lxB-J1-ZlA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="1265.6666666666667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_chrome_logo" translatesAutoresizingMaskIntoConstraints="NO" id="khO-kW-Hx5">
+                                                <rect key="frame" x="7" y="0.0" width="400" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="XnC-hJ-7YG"/>
+                                                    <constraint firstAttribute="width" constant="400" id="i45-58-eW1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chrome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBS-c2-oLe">
+                                                <rect key="frame" x="167" y="261" width="80" height="25.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xeY-GR-vmG">
+                                                <rect key="frame" x="0.0" y="297.33333333333331" width="414" height="968.33333333333348"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel leo volutpat tortor ornare hendrerit. Fusce sit amet fringilla sapien. Nullam ipsum ligula, blandit sit amet mauris id, bibendum pellentesque risus. Duis convallis libero eu nisi dapibus, et ultrices mi volutpat. Praesent gravida tincidunt ante, eget convallis ipsum iaculis eu. Aenean sollicitudin nec neque eget auctor. Pellentesque scelerisque facilisis lobortis. Nam ante velit, luctus mattis metus vitae, sagittis pellentesque mi. Donec eleifend massa eu ligula consectetur, vel finibus libero iaculis. Nam scelerisque, velit ut blandit mattis, velit enim semper leo, ut mattis enim risus ut sem. Sed massa libero, vehicula non condimentum quis, rhoncus a risus. Maecenas vel diam ac elit pulvinar malesuada.
+
+Quisque turpis quam, congue non turpis et, congue elementum mi. Proin arcu tellus, fermentum non vestibulum eget, mollis ac metus. Fusce nec scelerisque ligula, consectetur viverra diam. Praesent posuere eget neque at vulputate. Phasellus non eleifend eros. Fusce dignissim nulla arcu. Fusce quis mattis tortor. Praesent rhoncus lacus vel odio porttitor, vitae lobortis ligula sollicitudin. Fusce ac viverra odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ac lectus semper, ullamcorper lorem et, convallis sapien. In pellentesque eros et varius iaculis. Fusce magna risus, malesuada et iaculis commodo, egestas vel tortor. Ut nisi quam, interdum ut mattis ut, commodo eu odio. Donec sodales lobortis arcu non ultricies.
+
+Quisque vitae mollis elit. Maecenas euismod quam massa, vitae consequat leo vulputate non. Nam eu mi maximus ligula vestibulum sagittis nec vel velit. Morbi congue congue augue a venenatis. Etiam a sapien tincidunt, condimentum arcu in, scelerisque ligula. Ut dictum risus quis elementum auctor. Mauris nisi tellus, ullamcorper ut volutpat id, lacinia id magna. Donec lacus dolor, convallis sed gravida sit amet, gravida vitae elit. Aenean eget justo tincidunt, placerat purus vel, fringilla urna. Duis tincidunt pulvinar porta. Morbi sollicitudin dui magna, lacinia ultricies metus mattis vitae. Phasellus pellentesque, metus et maximus porta, augue nisi imperdiet libero, at sollicitudin nibh nibh nec turpis. Fusce vitae nisl diam. Praesent sit amet aliquet erat. Morbi eget varius justo.
+
+Sed bibendum accumsan iaculis. Mauris tincidunt odio nibh, at tincidunt libero venenatis sed. Duis congue aliquam enim, nec faucibus est faucibus convallis. Donec scelerisque elementum eros nec suscipit. Curabitur sollicitudin fermentum dui, in efficitur risus finibus eu. Nam mollis arcu congue pulvinar faucibus. Morbi eget gravida lectus, viverra maximus magna. Praesent sodales enim ligula, eget vestibulum purus pharetra quis. Donec rhoncus tincidunt scelerisque. Morbi enim tellus, pretium non mattis in, semper sit amet velit. Aenean dictum maximus leo quis scelerisque. In convallis pulvinar nibh, sed pulvinar leo imperdiet non. Proin rutrum metus vel molestie sodales. Vestibulum suscipit odio vitae suscipit tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed aliquam dui eget posuere ullamcorper.</mutableString>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lxB-J1-ZlA" firstAttribute="leading" secondItem="U0l-Ss-M5p" secondAttribute="leading" id="9sa-3e-KfA"/>
+                                    <constraint firstAttribute="bottom" secondItem="lxB-J1-ZlA" secondAttribute="bottom" constant="25" id="ZDM-n7-t7w"/>
+                                    <constraint firstItem="lxB-J1-ZlA" firstAttribute="top" secondItem="U0l-Ss-M5p" secondAttribute="top" constant="28" id="emr-KK-lXy"/>
+                                    <constraint firstAttribute="trailing" secondItem="lxB-J1-ZlA" secondAttribute="trailing" id="hcD-bx-sPJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U0l-Ss-M5p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Q5-9c-Azz"/>
+                            <constraint firstItem="lxB-J1-ZlA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8Fk-ZA-n5d"/>
+                            <constraint firstAttribute="trailing" secondItem="U0l-Ss-M5p" secondAttribute="trailing" id="9xu-ly-hgi"/>
+                            <constraint firstItem="U0l-Ss-M5p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYT-2p-Ojg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U0l-Ss-M5p" secondAttribute="bottom" id="pvC-Dt-lxk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="xeY-GR-vmG" id="ckw-in-K7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="109.23913043478262"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="google_chrome_logo" width="577" height="303"/>
+    </resources>
+</document>
